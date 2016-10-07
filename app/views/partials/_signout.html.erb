@@ -1,0 +1,8 @@
+<% if current_user %>
+  <p>
+    Logged in as: <strong><%= make_username %></strong>
+  </p>
+ <%= button_to "Log Out", session_url, method: :delete %>
+<% else %>
+  <%= button_to "Log In", new_session_url, method: :get  %>
+<% end %>

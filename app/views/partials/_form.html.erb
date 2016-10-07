@@ -1,0 +1,15 @@
+<form action="<%= action %>" method="POST">
+  <label>Email
+    <br>
+    <input type="text" name="user[email]">
+  </label>
+  <br>
+  <br>
+  <label>Password
+    <br>
+    <input type="password" name="user[password]">
+  </label>
+  <br>
+  <br>
+  <input type="submit" value=" <%= action == session_url ? "Sign In" : "Sign Up" %> ">
+</form>
