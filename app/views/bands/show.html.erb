@@ -6,3 +6,5 @@
     <%= link_to album.title, album_url(album) %>
   <% end %>
 </ul>
+<br>
+<%= button_to "Add Album", new_band_album_url(@band), method: :get %>
